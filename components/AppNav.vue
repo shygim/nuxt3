@@ -3,7 +3,7 @@
     <div class="nav">
       <ul class="nav_list">
         <li v-for="item in navItems" :key="item.idx" class="nav_list_item">
-          {{ item.labels }}
+          {{ item.label }}
         </li>
       </ul>
     </div>
@@ -11,12 +11,14 @@
 </template>
 
 <script setup lang="ts">
-const navItems = ref([
-  { idx: 0, labels: "시사0", value: "genral0" },
-  { idx: 1, labels: "시사1", value: "genral1" },
-  { idx: 2, labels: "시사2", value: "genral2" },
-  { idx: 3, labels: "시사3", value: "genral3" },
-  { idx: 4, labels: "시사4", value: "genral4" },
+import type { Nav } from "../types/nav";
+
+const navItems = ref<Nav[]>([
+  { idx: 0, label: "시사0", value: "genral0" },
+  { idx: 1, label: "시사1", value: "genral1" },
+  { idx: 2, label: "시사2", value: "genral2" },
+  { idx: 3, label: "시사3", value: "genral3" },
+  { idx: 4, label: "시사4", value: "genral4" },
 ]);
 </script>
 

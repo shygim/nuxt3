@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.3",
+    "dayjs": "^1.11.12",
     "install": "^0.13.0",
     "npm": "^10.8.2",
     "nuxt": "^3.12.4",
